@@ -1,0 +1,363 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"environemt",
+				"environment_converter"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "knife-convert.gemspec",
+			"settings":
+			{
+				"buffer_size": 816,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lib/convert/environment_converter.rb",
+			"settings":
+			{
+				"buffer_size": 3027,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lib/chef/knife/convert_environment.rb",
+			"settings":
+			{
+				"buffer_size": 1524,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lib/chef/knife/convert_role.rb",
+			"settings":
+			{
+				"buffer_size": 1471,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lib/convert/role_converter.rb",
+			"settings":
+			{
+				"buffer_size": 3274,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+		],
+		"width": 530.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/j.alberts/Google Drive/home/src/knife-role-convert/lib/convert/convert-common.rb",
+		"/Users/j.alberts/Google Drive/home/src/knife-role-convert/lib/chef/knife/convert_environment.rb",
+		"/Users/j.alberts/Google Drive/home/src/knife-role-convert/lib/chef/knife/convert_role.rb",
+		"/Users/j.alberts/Google Drive/home/src/knife-role-convert/lib/convert/environment_converter.rb",
+		"/Users/j.alberts/Google Drive/home/src/knife-role-convert/lib/convert/role_converter.rb",
+		"/Users/j.alberts/Google Drive/home/src/knife-role-convert/lib/chef/convert/knife/convert_role.rb",
+		"/Users/j.alberts/Google Drive/home/src/knife-role-convert/lib/chef/convert/knife/convert_environment.rb",
+		"/Users/j.alberts/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/j.alberts/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/j.alberts/Google Drive/home/src/knife-role-convert/lib/chef/environment_converter.rb",
+		"/Users/j.alberts/Google Drive/home/src/knife-role-convert/spec/unit/role_convert_spec.rb",
+		"/Users/j.alberts/Google Drive/home/src/knife-role-convert/lib/chef/role_converter.rb",
+		"/Users/j.alberts/Google Drive/home/src/knife-role-convert/lib/chef/convert-common.rb",
+		"/Users/j.alberts/Google Drive/home/src/knife-role-convert/lib/chef/env_converter.rb",
+		"/Users/j.alberts/Google Drive/home/src/knife-role-convert/lib/chef/knife/role_convert.rb",
+		"/Users/j.alberts/Google Drive/home/src/knife-role-convert/lib/chef/knife/env_convert.rb",
+		"/Users/j.alberts/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/j.alberts/Google Drive/home/src/knife-role-convert/lib/chef/env_converter/templates/recipe.erb",
+		"/Users/j.alberts/Google Drive/home/src/knife-role-convert/lib/chef/role_converter/env_converter.rb",
+		"/Users/j.alberts/_Covestic.bad_perms/src/chef-repo-2.0/cookbooks/mspot_syslogreporting/recipes/default.rb"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"role",
+			"open",
+			"$1"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "knife-convert.gemspec",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 816,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "lib/convert/environment_converter.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3027,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1432,
+								1432
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 221.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "lib/chef/knife/convert_environment.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1524,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1451,
+								1451
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "lib/chef/knife/convert_role.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1471,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1199,
+								1199
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "lib/convert/role_converter.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3274,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								732,
+								732
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 225.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"project": "role_env-convert.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
