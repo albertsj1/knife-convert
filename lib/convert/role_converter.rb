@@ -51,7 +51,7 @@ class Chef
         convert_runlist unless no_runlist
       end
 
-      def convert_attributes(attrs, type, parents=[])
+      def convert_attributes(attrs, type, parents = [])
         # XXX this whole bit stinks, redo it later
         attrs.each do |attribute, value|
           # detect hashes and recursively descend to the bottommost level of nesting
@@ -61,7 +61,7 @@ class Chef
             new_parents << attribute
             convert_attributes(value, type, new_parents)
           else
-            attr_path = parents.map { |a| "['#{a}']" }.join() + "['#{attribute}']"
+            attr_path = parents.map { |a| "['#{a}']" }.join + "['#{attribute}']"
             attributes[type].push("node.#{type}#{attr_path} = #{value.pretty_inspect}")
           end
         end
@@ -71,9 +71,7 @@ class Chef
         role.run_list.each do |entry|
           if entry.recipe?
             cookbook = entry.name.split('::').first
-            unless dependencies.member? cookbook
-              dependencies << cookbook
-            end
+            dependencies << cookbook unless  dependencies.member? cookbook
             run_list.push("include_recipe '#{entry.name}'\n")
           elsif entry.role?
             # XXX process recursively ?
@@ -88,13 +86,13 @@ class Chef
         template = IO.read(Chef::Convert::Role::RECIPE_TEMPLATE).chomp
         eruby = Erubis::Eruby.new(template)
         context = {
-          :cookbook => cookbook,
-          :recipe => recipe,
-          :default_attributes => attributes['default'],
-          :override_attributes => attributes['override'],
-          :run_list => run_list,
-          :comment_enabled => comment_enabled,
-          :author => author
+          cookbook: cookbook,
+          recipe: recipe,
+          default_attributes: attributes['default'],
+          override_attributes: attributes['override'],
+          run_list: run_list,
+          comment_enabled: comment_enabled,
+          author: author
         }
         eruby.evaluate(context)
       end

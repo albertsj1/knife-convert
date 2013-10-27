@@ -22,9 +22,9 @@ class Chef
   class Convert
     describe Role do
       describe '#initialize' do
-        let(:simple_role) {
+        let(:simple_role) do
           Role.new('simple_role')
-        }
+        end
         it 'should load the role from disk' do
           simple_role.recipe.should eq 'simple_role'
           simple_role.role.run_list.first.should be_a_kind_of Chef::RunList::RunListItem

@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.license = 'Apache 2.0'
   s.platform = Gem::Platform::RUBY
   s.has_rdoc = true
-  s.extra_rdoc_files = ["README.rdoc", "LICENSE"]
+  s.extra_rdoc_files = ["LICENSE"]
   s.summary = "knife plugin for converting roles and environment files to recipes"
   s.description = s.summary
   s.author = "John Alberts"
@@ -21,5 +21,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'rdoc'
 
   s.require_path = 'lib'
-  s.files = %w(LICENSE README.rdoc Rakefile) + Dir.glob("{lib,spec}/**/*")
+  s.files = %w(LICENSE README.md Rakefile) + Dir.glob("{lib,spec}/**/*")
 end

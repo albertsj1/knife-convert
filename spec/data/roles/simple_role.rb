@@ -11,8 +11,8 @@ override_attributes(
       'collect_tears' => true,
       'nested' => {
         'should_not_inspect_the_contents' => [
-          { :lambda => 'lambda' },
-          { :lambda => 'mu' }
+          { lambda: 'lambda' },
+          { lambda: 'mu' }
         ]
       }
     }

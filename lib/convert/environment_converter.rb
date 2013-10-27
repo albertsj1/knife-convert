@@ -53,7 +53,7 @@ class Chef
         convert_attributes(environment.override_attributes, 'override') unless no_override
       end
 
-      def convert_attributes(attrs, type, parents=[])
+      def convert_attributes(attrs, type, parents = [])
         # XXX this whole bit stinks, redo it later
         attrs.each do |attribute, value|
           # detect hashes and recursively descend to the bottommost level of nesting
@@ -63,7 +63,7 @@ class Chef
             new_parents << attribute
             convert_attributes(value, type, new_parents)
           else
-            attr_path = parents.map { |a| "['#{a}']" }.join() + "['#{attribute}']"
+            attr_path = parents.map { |a| "['#{a}']" }.join + "['#{attribute}']"
             attributes[type].push("node.#{type}#{attr_path} = #{value.pretty_inspect}")
           end
         end
@@ -74,12 +74,12 @@ class Chef
         template = IO.read(Chef::Convert::Environment::RECIPE_TEMPLATE).chomp
         eruby = Erubis::Eruby.new(template)
         context = {
-          :cookbook => cookbook,
-          :recipe => recipe,
-          :default_attributes => attributes['default'],
-          :override_attributes => attributes['override'],
-          :comment_enabled => comment_enabled,
-          :author => author
+          cookbook: cookbook,
+          recipe: recipe,
+          default_attributes: attributes['default'],
+          override_attributes: attributes['override'],
+          comment_enabled: comment_enabled,
+          author: author
         }
         eruby.evaluate(context)
       end
