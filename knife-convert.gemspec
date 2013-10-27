@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.summary = "knife plugin for converting roles and environment files to recipes"
   s.description = s.summary
   s.author = "John Alberts"
-  s.email = "john@alberts.me"
+  s.email = "john.m.alberts@gmail.com"
   s.homepage = "http://github.com/albertsj1/knife-convert"
 
   s.add_dependency "mixlib-cli", ">= 1.2.2"
