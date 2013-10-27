@@ -22,49 +22,49 @@ require 'convert/environment_converter'
 module JA
   class ConvertEnvironment < Chef::Knife
 
-    banner "knife convert environment ENVIRONMENT (options)"
+    banner 'knife convert environment ENVIRONMENT (options)'
 
     option :cookbook,
-      :short => "-c COOKBOOK",
-      :long => "--cookbook COOKBOOK",
-      :description => "Cookbook name you want the environment to be added to"
+      :short => '-c COOKBOOK',
+      :long => '--cookbook COOKBOOK',
+      :description => 'Cookbook name you want the environment to be added to'
 
     option :recipe,
-      :short => "-r RECIPE",
-      :long => "--recipe RECIPE",
-      :description => "Recipe name you want the environment to be converted to",
+      :short => '-r RECIPE',
+      :long => '--recipe RECIPE',
+      :description => 'Recipe name you want the environment to be converted to',
       :default => nil
 
     option :author,
-      :short => "-a Author Name",
-      :long => "--author Author name",
-      :description => "Author name to use in the comment of the generated recipe",
+      :short => '-a Author Name',
+      :long => '--author Author name',
+      :description => 'Author name to use in the comment of the generated recipe',
       :default => nil
 
     option :comment_enabled,
-      :short => "-C",
-      :long => "--comment_enabled",
-      :description => "Enable a comment at the top of the generated recipe",
+      :short => '-C',
+      :long => '--comment_enabled',
+      :description => 'Enable a comment at the top of the generated recipe',
       :boolean => true | false,
       :default => false
 
     option :no_default,
-      :short => "-d",
-      :long => "--no_default",
+      :short => '-d',
+      :long => '--no_default',
       :description => "Don't output default attributes",
       :boolean => true | false,
       :default => false
 
     option :no_override,
-      :short => "-o",
-      :long => "--no_override",
+      :short => '-o',
+      :long => '--no_override',
       :description => "Don't output override attributes",
       :boolean => true | false,
       :default => false
 
     def run
       if @name_args.length < 1
-        ui.error("You must supply the name of the environment you wish to convert")
+        ui.error('You must supply the name of the environment you wish to convert')
         exit 1
       end
       env = @name_args[0]

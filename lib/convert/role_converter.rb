@@ -22,7 +22,7 @@ require 'chef/role'
 class Chef
   class Convert
     class Role
-      RECIPE_TEMPLATE = File.join(File.dirname(__FILE__), "role_converter", "templates", "recipe.erb")
+      RECIPE_TEMPLATE = File.join(File.dirname(__FILE__), 'role_converter', 'templates', 'recipe.erb')
 
       attr_reader :role, :cookbook, :recipe, :comment_enabled, :author, :no_default, :no_override, :no_runlist
       attr_accessor :attributes, :dependencies, :run_list
@@ -46,8 +46,8 @@ class Chef
       end
 
       def convert_role
-        convert_attributes(role.default_attributes, "default") unless no_default
-        convert_attributes(role.override_attributes, "override") unless no_override
+        convert_attributes(role.default_attributes, 'default') unless no_default
+        convert_attributes(role.override_attributes, 'override') unless no_override
         convert_runlist unless no_runlist
       end
 
@@ -70,7 +70,7 @@ class Chef
       def convert_runlist
         role.run_list.each do |entry|
           if entry.recipe?
-            cookbook = entry.name.split("::").first
+            cookbook = entry.name.split('::').first
             unless dependencies.member? cookbook
               dependencies << cookbook
             end

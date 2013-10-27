@@ -22,7 +22,7 @@ require 'chef/environment'
 class Chef
   class Convert
     class Environment
-      RECIPE_TEMPLATE = File.join(File.dirname(__FILE__), "environment_converter", "templates", "recipe.erb")
+      RECIPE_TEMPLATE = File.join(File.dirname(__FILE__), 'environment_converter', 'templates', 'recipe.erb')
 
       attr_reader :environment, :cookbook, :recipe, :comment_enabled, :author, :no_default, :no_override
       attr_accessor :attributes
@@ -49,8 +49,8 @@ class Chef
       end
 
       def convert_environment
-        convert_attributes(environment.default_attributes, "default") unless no_default
-        convert_attributes(environment.override_attributes, "override") unless no_override
+        convert_attributes(environment.default_attributes, 'default') unless no_default
+        convert_attributes(environment.override_attributes, 'override') unless no_override
       end
 
       def convert_attributes(attrs, type, parents=[])

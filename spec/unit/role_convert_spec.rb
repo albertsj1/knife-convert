@@ -21,18 +21,18 @@ require 'support/spec_helper.rb'
 class Chef
   class Convert
     describe Role do
-      describe "#initialize" do
+      describe '#initialize' do
         let(:simple_role) {
-          Role.new("simple_role")
+          Role.new('simple_role')
         }
-        it "should load the role from disk" do
-          simple_role.recipe.should eq "simple_role"
+        it 'should load the role from disk' do
+          simple_role.recipe.should eq 'simple_role'
           simple_role.role.run_list.first.should be_a_kind_of Chef::RunList::RunListItem
-          simple_role.role.run_list.first.name.should eq "foo"
+          simple_role.role.run_list.first.name.should eq 'foo'
         end
 
-        it "process nested attributes" do
-          simple_role.convert_attributes(simple_role.role.override_attributes, "override")
+        it 'process nested attributes' do
+          simple_role.convert_attributes(simple_role.role.override_attributes, 'override')
           simple_role.attributes['override'].should eq [
             "node.override['foo']['unicorn']['collect_tears'] = true\n",
             "node.override['foo']['unicorn']['nested']['should_not_inspect_the_contents'] = [{:lambda=>\"lambda\"}, {:lambda=>\"mu\"}]\n",

@@ -22,56 +22,56 @@ require 'convert/role_converter'
 module JA
   class ConvertRole < Chef::Knife
 
-    banner "knife convert role ROLE (options)"
+    banner 'knife convert role ROLE (options)'
 
     option :cookbook,
-      :short => "-c COOKBOOK",
-      :long => "--cookbook COOKBOOK",
-      :description => "Cookbook name you want the role to be added to"
+      :short => '-c COOKBOOK',
+      :long => '--cookbook COOKBOOK',
+      :description => 'Cookbook name you want the role to be added to'
 
     option :recipe,
-      :short => "-r RECIPE",
-      :long => "--recipe RECIPE",
-      :description => "Recipe name you want the role to be ceonverted to",
+      :short => '-r RECIPE',
+      :long => '--recipe RECIPE',
+      :description => 'Recipe name you want the role to be ceonverted to',
       :default => nil
 
     option :author,
-      :short => "-a Author Name",
-      :long => "--author Author name",
-      :description => "Author name to use in the comment of the generated recipe",
+      :short => '-a Author Name',
+      :long => '--author Author name',
+      :description => 'Author name to use in the comment of the generated recipe',
       :default => nil
 
     option :comment_enabled,
-      :short => "-C",
-      :long => "--comment_enabled",
-      :description => "Enable a comment at the top of the generated recipe",
+      :short => '-C',
+      :long => '--comment_enabled',
+      :description => 'Enable a comment at the top of the generated recipe',
       :boolean => true | false,
       :default => false
 
     option :no_default,
-      :short => "-d",
-      :long => "--no_default",
+      :short => '-d',
+      :long => '--no_default',
       :description => "Don't output default attributes",
       :boolean => true | false,
       :default => false
 
     option :no_override,
-      :short => "-o",
-      :long => "--no_override",
+      :short => '-o',
+      :long => '--no_override',
       :description => "Don't output override attributes",
       :boolean => true | false,
       :default => false
 
     option :no_runlist,
-      :short => "-R",
-      :long => "--no_runlist",
+      :short => '-R',
+      :long => '--no_runlist',
       :description => "Don't output runlist lines",
       :boolean => true | false,
       :default => false
 
     def run
       if @name_args.length < 1
-        ui.error("You must supply the name of the role you wish to convert")
+        ui.error('You must supply the name of the role you wish to convert')
         exit 1
       end
       role = @name_args[0]
